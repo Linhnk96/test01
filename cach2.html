@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html lang='en'>
+  <head>
+      <meta charset='UTF-8'>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  </head>
+
+  <body id='body'>
+      <script>
+
+      /**
+      * Script load player.
+      * + callback trả về player khi init thành công
+      https://adminplayer.sohatv.vn/docs/guide/secure-sdk
+      */
+      (function(d, s) {
+          var js, pjs = d.getElementsByTagName(s)[0];
+          js = d.createElement(s);
+          js.src = 'https://adminplayer.sohatv.vn/resource/init-script/playerInitSdk.js#secure=[Mã Secure Token]';
+          pjs.parentNode.insertBefore(js, pjs);
+      }(document, 'script'));
+      </script>
+
+      /*
+          Các vị trí gen player với:
+          + width: Chiều rộng
+          + height: Chiều dài
+          + class: Tên của player - được hiển thị trong trang quản lý
+          + data-[attribute]: Các option như file, autoplay, poster, mute, volume, replay, ads, midroll, nopre,...
+      */
+      <video width='500px' height="300px" class="BIZFLYVODBIZFLYVODSTAGING0bd485d464504d67af7b4f5b333fb73e" data-file="https://d-0bd485d464504d67af7b4f5b333fb73e.vod-staging.bfcplatform.vn/.vod-d/547694304133079040_2023_2_13_cqM_HFH3ueg-1676273085153901480419.mp4">
+      </video>
+
+      <br/>
+
+  </body>
+
+  </html>
